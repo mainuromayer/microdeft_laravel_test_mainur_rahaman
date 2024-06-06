@@ -5,8 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
+
 
 class BloodGroup extends Seeder
 {
@@ -21,10 +20,41 @@ class BloodGroup extends Seeder
 //            'password' => Hash::make('password'),
 //        ]);
 
-//        try {
-//            DB::table('users')->insert(['name' => 'Mainur', 'status' => 'Joe', 'lastname' => 'Bloggs']);
-//        } catch(Exception $e){
-//            //Die silently
-//        }
+//        BloodGroup::table('blood_group')->insert([
+//            //Global Admin
+//            [
+//                'name' => "Mainur",
+//                'status' => 'A+',
+//            ],
+//            [
+//                'name' => "Arif",
+//                'status' => 'A-,',
+//            ],
+//            [
+//                'name' => "Badol",
+//                'status' => 'B+,',
+//            ],
+//            [
+//                'name' => "Miraj",
+//                'status' => 'B-,',
+//            ],
+//            [
+//                'name' => "Miraj",
+//                'status' => 'O+,',
+//            ],
+//            [
+//                'name' => "Sami",
+//                'status' => 'O-,',
+//            ],
+//            [
+//                'name' => "Rifat",
+//                'status' => 'AB+,',
+//            ],
+//            [
+//                'name' => "Abdullah",
+//                'status' => 'AB-,',
+//            ],
+//
+//        ]);
     }
 }

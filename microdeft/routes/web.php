@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DonerController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,4 +18,17 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+
+
+
+
+Route::get('/doners', [DonerController::class, 'CreateDoner']);
+
+
+
+
+
 require __DIR__.'/auth.php';
+
+
+
