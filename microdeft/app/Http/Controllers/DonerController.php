@@ -8,8 +8,8 @@ class DonerController extends Controller
 {
     public function CreateDoner(Request $request){
         DonerController::create([
-            'name' => $request->user(),
-            'status' => $request->user(),
+            'name' => $request->input('name'),
+            'status' => $request->input('status'),
         ]);
     }
 }
